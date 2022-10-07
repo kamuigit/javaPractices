@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+	<test name="chromeBrowser">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.execution.ExecutionClass" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="EdgeBrowser">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="com.execution.ExecutionClass" />
+		</classes>
+	</test>
+	<test name="FireFox">
+		<parameter name="browser" value="gecko"></parameter>
+		<classes>
+			<class name="com.execution.ExecutionClass" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
